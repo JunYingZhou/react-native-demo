@@ -18,17 +18,17 @@ export default function App() {
       <Tab.Navigator
         screenOptions={({ route }) => ({
           headerShown: false, // 隐藏所有页面的标题栏
-          tabBarIcon: ({ focused, color, size }) => {
-            let iconName;
+          // tabBarIcon: ({ focused, color, size }) => {
+          //   let iconName;
 
-            if (route.name === 'Main') {
-              iconName = focused ? 'ios-list' : 'ios-list-outline';
-            } else if (route.name === 'Home') {
-              iconName = focused ? 'ios-home' : 'ios-home-outline';
-            }
+          //   if (route.name === 'Main') {
+          //     iconName = focused ? 'ios-list' : 'ios-list-outline';
+          //   } else if (route.name === 'Home') {
+          //     iconName = focused ? 'ios-home' : 'ios-home-outline';
+          //   }
 
-            return <Ionicons name={iconName} size={size} color={color} />;
-          },
+          //   return <Ionicons name={iconName} size={size} color={color} />;
+          // },
         })}
       >
         <Tab.Screen name="Main" component={Main} />
